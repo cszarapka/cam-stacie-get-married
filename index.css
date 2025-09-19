@@ -411,7 +411,7 @@ body {
   }
 }
 .hero-overlay {
-  background: var(--gradient-hero);
+/*   background: var(--gradient-hero); */
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
 }
