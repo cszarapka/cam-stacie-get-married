@@ -320,7 +320,7 @@ video {
 :root {
   --background: 35 20% 98%;
   --foreground: 25 15% 25%;
-  --card: 35 25% 95%;
+  --card: 35 25% 96%;
   --card-foreground: 25 15% 25%;
   --popover: 35 25% 95%;
   --popover-foreground: 25 15% 25%;
@@ -335,7 +335,7 @@ video {
   --wedding-rose: 15 45% 75%;
   --wedding-blush: 350 35% 85%;
   --wedding-sage: 90 20% 85%;
-  --wedding-cream: 40 30% 94%;
+  --wedding-cream: 40 30% 93%;
   --wedding-champagne: 45 35% 88%;
   --gradient-hero: linear-gradient(
     135deg,
