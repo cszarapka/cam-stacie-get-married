@@ -318,13 +318,19 @@
               <h2 class="heading-font text-4xl md:text-5xl mb-8 text-foreground">RSVP</h2>
               <div class="w-16 h-px bg-primary mx-auto mb-6"></div>
               <p class="text-base md:text-lg mb-6">
+                Yemaya is very kindly (and very temporarily) holding 2 separate weeks for us in order to give our loved ones the most flexibility, best chance of being able to make it and for us to fully book the resort.
+              </p>
+              <p class="text-base md:text-lg mb-6">
+                To sprinkle a bit more chaos, we are also finalizing the costs of one last potential venue in Tuscany, so we are including that as a potential option as well.
+              </p>
+              <p class="text-base md:text-lg mb-6">
                 Please respond by Oct 7<sup>th</sup>, 2025. We cannot wait to celebrate with you!
               </p>
             </div>
             <div class="bg-card rounded-lg shadow-[var(--shadow-elegant)] p-8 ">
               <form class="space-y-6">
                 <div>
-                  <label for="name" class="block text-sm font-medium text-foreground mb-2">Full Name of Attendees <sup style="color: red;">*</sup></label>
+                  <label for="name" class="block text-sm font-medium text-foreground mb-2">Full Name of Attendees <span style="color: red;">*</span></label>
                   <input
                     type="text"
                     id="name"
@@ -335,7 +341,7 @@
                     value="" />
                 </div>
                 <div>
-                  <label for="email" class="block text-sm font-medium text-foreground mb-2">Email Address <sup style="color: red;">*</sup></label
+                  <label for="email" class="block text-sm font-medium text-foreground mb-2">Email Address <span style="color: red;">*</span></label
                   ><input
                     type="email"
                     id="email"
@@ -348,28 +354,34 @@
                 <div>
                   <label class="block text-sm font-medium text-foreground mb-2">Please select all that you could make:</label>
                   <div>
-                    <input type="checkbox" id="yemaya_first" name="yemaya_first" checked />
+                    <input type="checkbox" id="yemaya_first" name="yemaya_first" />
                     <label for="yemaya_first">Little Corn &mdash; May 30<sup>th</sup> - June 6<sup>th</sup></label>
                   </div>
                   <div>
-                    <input type="checkbox" id="yemaya_second" name="yemaya_second" checked />
+                    <input type="checkbox" id="yemaya_second" name="yemaya_second" />
                     <label for="yemaya_second">Little Corn &mdash; May 30<sup>th</sup> - June 6<sup>th</sup></label>
                   </div>
                   <div>
-                    <input type="checkbox" id="italy_first" name="italy_first" checked />
+                    <input type="checkbox" id="italy_first" name="italy_first" />
                     <label for="italy_first">Tuscany &mdash; June 29<sup>th</sup> - July 4<sup>th</sup></label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="regrets" name="regrets" />
+                    <label for="regrets">Unfortunately, we cannot make it</label>
                   </div>
                 </div>
                 <div>
-                  <label for="email" class="block text-sm font-medium text-foreground mb-2">Email Address <sup style="color: red;">*</sup></label
-                  ><input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
+                  <label for="attendees" class="block text-sm font-medium text-foreground mb-2">Total Attendees</label>
+                  <input type="text">
+                </div>
+                <div>
+                  <label for="notes" class="block text-sm font-medium text-foreground mb-2">Additional Notes</label
+                  ><textarea
+                    id="notes"
+                    name="notes"
+                    rows="4"
                     class="w-full p-3 border border-border rounded-lg bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
-                    placeholder="Just one is fine!"
-                    value="" />
+                    placeholder="Just one is fine!"></textarea>
                 </div>
                 <button type="submit" class="w-full btn-wedding text-lg py-4">Submit RSVP</button>
               </form>
