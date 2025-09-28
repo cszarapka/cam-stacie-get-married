@@ -13,12 +13,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" />
     <link rel="stylesheet" crossorigin href="index.css" />
     <style>
-      .dancing-script {
-        font-family: "Dancing Script", cursive;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: normal;
-      }
       .heading-font {
         font-family: "Hello Paris Serif Regular";
         font-optical-sizing: auto;
@@ -97,7 +91,7 @@
               is a small private luxury resort at the northern tip of the island with 18 beachfront rooms.
             </p>
             <p class="text-base md:text-lg mb-8">
-              Morning yoga, snorkel boat tours, scuba diving, fantastic food, lazy beach days. Crush the latest romantasy "novel", catch up on your AI business books, or grab a kayak.
+              Morning yoga, snorkel boat tours, scuba diving, fantastic food, kayaks, lazy beach days. Crush the latest romantasy novel or catch up on your AI business books.
             </p>
           </div>
         </div>
@@ -121,7 +115,7 @@
                 <div class="text-sm text-muted-foreground space-y-2">
                   <p><strong>From Vancouver (YVR)</strong></p>
                   <p>12~17h flight</p>
-                  <p class="pt-2 text-xs italic">Depends what you book</p>
+                  <p class="pt-2 text-xs italic">2-3 flights</p>
                 </div>
               </div>
               <div class="bg-card p-6 rounded-lg shadow-[var(--shadow-soft)]">
@@ -192,7 +186,7 @@
                   11x
                   <a href="https://yemayalittlecorn.com/rooms/luxury-beachfront-room/" class="text-primary hover:underline">Classic Luxury</a>
                 </h3>
-                <div class="text-sm font-medium">$170 USD</div>
+                <div class="text-sm font-medium">$170-$230 USD</div>
               </div>
             </div>
             <div class="bg-card rounded-lg overflow-hidden shadow-[var(--shadow-soft)]">
@@ -280,8 +274,8 @@
                     <tr class="border-b transition-colors data-[state=selected]:bg-muted border-wedding-sage/10 hover:bg-wedding-cream/30">
                       <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 font-medium text-wedding-sage">Accomm.</td>
                       <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-muted-foreground">7 nights at Yemaya</td>
-                      <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 font-medium text-wedding-rose">$826 - $1,070</td>
-                      <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-sm text-muted-foreground">Quads would be even cheaper ($560)</td>
+                      <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 font-medium text-wedding-rose">$560 - $1,070</td>
+                      <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-sm text-muted-foreground">Quad, Double, or Double w/ private plunge</td>
                     </tr>
                     <tr class="border-b transition-colors data-[state=selected]:bg-muted border-wedding-sage/10 hover:bg-wedding-cream/30">
                       <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 font-medium text-wedding-sage">Food</td>
@@ -300,11 +294,11 @@
               </div>
               <div class="mt-6 p-4 bg-wedding-blush/20 rounded-lg border border-wedding-rose/20 mb-6">
                 <p class="text-sm text-muted-foreground text-center" style="font-family: system-ui, sans-serif;">
-                  <strong class="text-wedding-sage">Total Estimated Cost per Guest:</strong> <span>$2,117 - $2,771 CAD</span>
+                  <strong class="text-wedding-sage">Total Estimated Cost per Guest:</strong> <span>$1,850 - $2,771 CAD</span>
                 </p>
               </div>
               <p class="text-xs mt-1 block">
-                Additional costs not included, such as scuba diving and other excursions. Food and Alcohol not included. Note that you can buy meals elsewhere on the island and order a la carte at the resort or go with full packages. Food and Drink Menu: <a href="https://yemayalittlecorn.com/restaurant/">Yemaya Menu</a>
+                Additional costs not included, such as scuba diving and other excursions. Food and Alcohol not included. Note that you can buy meals elsewhere on the island and order a la carte at the resort or go with full packages. Food and Drink Menu: <a href="https://yemayalittlecorn.com/restaurant/" class="text-primary hover:underline">Yemaya Menu</a>
               </p>
             </div>
           </div>
@@ -317,60 +311,71 @@
           style="background-image: url('yemaya_swing.jpeg'); width: 100%; height: auto; max-height: 60vh"></div>
       </section>
       <!-- RSVP -->
-      <section id="rsvp" class="py-20 bg-background">
+      <section id="rsvp" class="py-20">
         <div class="container mx-auto px-6">
-          <div class="max-w-2xl mx-auto">
+          <div class="max-w-4xl mx-auto">
             <div class="text-center mb-12">
-              <h2 class="font-serif text-4xl md:text-5xl mb-8 text-foreground fade-in-up">RSVP</h2>
+              <h2 class="heading-font text-4xl md:text-5xl mb-8 text-foreground">RSVP</h2>
               <div class="w-16 h-px bg-primary mx-auto mb-6"></div>
-              <p class="text-muted-foreground">Please respond by May 1st, 2024. We can't wait to celebrate with you!</p>
+              <p class="text-base md:text-lg mb-6">
+                Please respond by Oct 7<sup>th</sup>, 2025. We cannot wait to celebrate with you!
+              </p>
             </div>
-            <div class="bg-card rounded-lg shadow-[var(--shadow-elegant)] p-8 fade-in-up">
+            <div class="bg-card rounded-lg shadow-[var(--shadow-elegant)] p-8 ">
               <form class="space-y-6">
                 <div>
-                  <label for="name" class="block text-sm font-medium text-foreground mb-2">Full Name *</label
-                  ><input
+                  <label for="name" class="block text-sm font-medium text-foreground mb-2">Full Name of Attendees <sup style="color: red;">*</sup></label>
+                  <input
                     type="text"
                     id="name"
                     name="name"
-                    required=""
+                    required
                     class="w-full p-3 border border-border rounded-lg bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
-                    placeholder="Enter your full name"
+                    placeholder="Enter your full names, comma separated"
                     value="" />
                 </div>
                 <div>
-                  <label for="email" class="block text-sm font-medium text-foreground mb-2">Email Address *</label
+                  <label for="email" class="block text-sm font-medium text-foreground mb-2">Email Address <sup style="color: red;">*</sup></label
                   ><input
                     type="email"
                     id="email"
                     name="email"
-                    required=""
+                    required
                     class="w-full p-3 border border-border rounded-lg bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
-                    placeholder="Enter your email"
+                    placeholder="Just one is fine!"
                     value="" />
                 </div>
                 <div>
-                  <label for="attending" class="block text-sm font-medium text-foreground mb-2">Will you be attending? *</label
-                  ><select
-                    id="attending"
-                    name="attending"
-                    required=""
-                    class="w-full p-3 border border-border rounded-lg bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent">
-                    <option value="">Please select</option>
-                    <option value="yes">Yes, I'll be there!</option>
-                    <option value="no">Unfortunately, I can't make it</option>
-                  </select>
+                  <label class="block text-sm font-medium text-foreground mb-2">Please select all that you could make:</label>
+                  <div>
+                    <input type="checkbox" id="yemaya_first" name="yemaya_first" checked />
+                    <label for="yemaya_first">Little Corn &mdash; May 30<sup>th</sup> - June 6<sup>th</sup></label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="yemaya_second" name="yemaya_second" checked />
+                    <label for="yemaya_second">Little Corn &mdash; May 30<sup>th</sup> - June 6<sup>th</sup></label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="italy_first" name="italy_first" checked />
+                    <label for="italy_first">Tuscany &mdash; June 29<sup>th</sup> - July 4<sup>th</sup></label>
+                  </div>
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-medium text-foreground mb-2">Email Address <sup style="color: red;">*</sup></label
+                  ><input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="w-full p-3 border border-border rounded-lg bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
+                    placeholder="Just one is fine!"
+                    value="" />
                 </div>
                 <button type="submit" class="w-full btn-wedding text-lg py-4">Submit RSVP</button>
               </form>
             </div>
             <div class="mt-8 text-center">
-              <p class="text-sm text-muted-foreground mb-4">Having trouble with the form? No problem!</p>
-              <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="mailto:sarah.michael.wedding@email.com" class="text-primary font-medium hover:underline">Email us your RSVP</a
-                ><span class="hidden sm:inline text-muted-foreground">•</span
-                ><a href="tel:+1234567890" class="text-primary font-medium hover:underline">Call (123) 456-7890</a>
-              </div>
+              <p class="text-sm text-muted-foreground mb-4">Having trouble with the form? Any questions? No problem! Call, text or email us.</p>
             </div>
           </div>
         </div>
