@@ -410,27 +410,24 @@
     </main>
   </body>
   <script>
-    var submitted=false;
     document.addEventListener("DOMContentLoaded", () => {
       const form = document.getElementById("gform");
 
       form.addEventListener("submit", (e) => {
-        e.preventDefault(); // prevent default if you were preventing it in jQuery
+        e.preventDefault(); // keep if you don't want it to actually submit
 
-        // Select all child elements of #gform
-        const children = form.querySelectorAll("*");
+        form.style.transition = "opacity 2s";
+        form.style.opacity = "0";
 
-        children.forEach(el => {
-          el.style.transition = "opacity 2s";   // animate opacity over 2 seconds
-          el.style.opacity = "0";
-        });
-
-        // After fade-out, insert the thank you message
+        // After fade-out, hide completely
         setTimeout(() => {
-          const msg = document.createElement("div");
-          msg.textContent = "Thank you so much!";
-          form.prepend(msg);
+          form.style.display = "none";
         }, 2000);
+
+        // Show thank-you message right away (or after fade if you prefer)
+        const msg = document.createElement("div");
+        msg.textContent = "Thank you so much!";
+        form.parentNode.insertBefore(msg, form);
       });
     });
   </script>
