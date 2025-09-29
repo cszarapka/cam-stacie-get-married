@@ -415,18 +415,26 @@
       const form = document.getElementById("gform");
 
       form.addEventListener("submit", (e) => {
-        form.style.transition = "display 2s";
-        form.style.display = "none";
+        // Lock current height so we can animate from it
+        const startHeight = form.offsetHeight + "px";
+        form.style.height = startHeight;
+        form.style.overflow = "hidden";
+        form.style.transition = "opacity 0.8s ease, height 0.8s ease";
 
-        // After fade-out, hide completely
-        // setTimeout(() => {
-        //   form.style.display = "none";
-        // }, 500);
+        // Kick off fade + collapse on the next animation frame
+        requestAnimationFrame(() => {
+          form.style.opacity = "0";
+          form.style.height = "0";
+        });
 
-        // Show thank-you message right away (or after fade if you prefer)
-        const msg = document.createElement("p");
-        msg.textContent = "Thank you so much!";
-        form.parentNode.insertBefore(msg, form);
+        // After transition completes: hide form, then insert message
+        form.addEventListener("transitionend", () => {
+          form.style.display = "none";
+
+          const msg = document.createElement("div");
+          msg.textContent = "Thank you so much!";
+          form.parentNode.insertBefore(msg, form);
+        }, { once: true });
       });
     });
   </script>
