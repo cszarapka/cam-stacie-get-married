@@ -415,15 +415,13 @@
       const form = document.getElementById("gform");
 
       form.addEventListener("submit", (e) => {
-        e.preventDefault(); // keep if you don't want it to actually submit
-
-        form.style.transition = "opacity 2s";
-        form.style.opacity = "0";
+        form.style.transition = "display 2s";
+        form.style.display = "none";
 
         // After fade-out, hide completely
-        setTimeout(() => {
-          form.style.display = "none";
-        }, 500);
+        // setTimeout(() => {
+        //   form.style.display = "none";
+        // }, 500);
 
         // Show thank-you message right away (or after fade if you prefer)
         const msg = document.createElement("p");
