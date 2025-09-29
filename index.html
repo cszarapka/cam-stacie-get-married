@@ -398,12 +398,29 @@
       </section>
     </main>
   </body>
-  <script src="jquery.min.js"></script>
-  <script type="text/javascript">var submitted=false;</script>
-  <script type="text/javascript">
-    $('#gform').on('submit', function(e) {
-      $('#gform *').fadeOut(2000);
-      $('#gform').prepend('Thank you so much!');
+  <script>
+    var submitted=false;
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("gform");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault(); // prevent default if you were preventing it in jQuery
+
+        // Select all child elements of #gform
+        const children = form.querySelectorAll("*");
+
+        children.forEach(el => {
+          el.style.transition = "opacity 2s";   // animate opacity over 2 seconds
+          el.style.opacity = "0";
+        });
+
+        // After fade-out, insert the thank you message
+        setTimeout(() => {
+          const msg = document.createElement("div");
+          msg.textContent = "Thank you so much!";
+          form.prepend(msg);
+        }, 2000);
+      });
     });
   </script>
 </html>
