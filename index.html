@@ -76,10 +76,6 @@
               <p class="text-lg md:text-xl font-bold mb-2">Wednesday, July 1, 2026</p>
               <p class="text-base md:text-lg">Ch&acirc;teau La Carri&egrave;re • Saint-Cyprien, Dordogne, France</p>
             </div>
-            <div class="w-16 h-px bg-primary mx-auto mb-8"></div>
-            <div class="mb-8">
-              <a href="#rsvp" class="w-full btn-wedding text-lg py-4">RSVP</a>
-            </div>
           </div>
         </div>
       </section>
@@ -211,65 +207,8 @@
               </p>
               <p class="text-base md:text-lg mb-6"><span class="font-bold">To the parents:</span> while we adore your kids, we are keeping the Wedding Day + Evening adults-only so everyone can relax and enjoy the celebration.</p>
               <p class="text-base md:text-lg mb-6">We cannot wait to celebrate with you!</p>
-            </div>
-            <div class="bg-card rounded-lg shadow-[var(--shadow-elegant)] p-8">
-              <form
-                class="space-y-6"
-                name="gform"
-                id="gform"
-                enctype="text/plain"
-                action="https://docs.google.com/forms/d/e/1FAIpQLSdCtmbN4surOIk3QXTd4i5gzvsNH6dBqeSOg66dSkHHOVNh7A/formResponse?"
-                target="hidden_iframe"
-                onsubmit="submitted=true;">
-                <div>
-                  <label for="entry.739718287" class="block text-sm font-medium text-foreground mb-2"
-                    >Full Name(s) of Attendees<span style="color: red">*</span></label
-                  >
-                  <input
-                    type="text"
-                    id="entry.739718287"
-                    name="entry.739718287"
-                    required
-                    class="w-full p-3 border border-border rounded-lg bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
-                    placeholder="Enter your full names, comma separated"
-                    value="" />
-                </div>
-                <div>
-                  <label for="entry.44731466" class="block text-sm font-medium text-foreground mb-2">Total Attendees<span style="color: red">*</span></label>
-                  <input
-                    type="number"
-                    placeholder="Total humans in your party"
-                    required
-                    id="entry.44731466"
-                    name="entry.44731466"
-                    class="w-full p-3 border border-border rounded-lg bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent" />
-                </div>
-                <div>
-                  <label for="entry.1204989593" class="block text-sm font-medium text-foreground mb-2">Will you be attending?<span style="color: red">*</span></label>
-                  <select
-                    id="entry.1204989593"
-                    name="entry.1204989593"
-                    required=""
-                    class="w-full p-3 border border-border rounded-lg bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent">
-                    <option value="">Please select</option>
-                    <option value="all">Yes &mdash; Wedding Day and Welcome Party</option>
-                    <option value="all_maybe">Yes &mdash; Wedding Day, maybe Welcome Party</option>
-                    <option value="wedding_only">Yes &mdash; Wedding Day only</option>
-                    <option value="no">Regrets</option>
-                  </select>
-                </div>
-                <div>
-                  <label for="entry.770752878" class="block text-sm font-medium text-foreground mb-2">Additional Notes</label>
-                  <textarea
-                    id="entry.770752878"
-                    name="entry.770752878"
-                    rows="4"
-                    class="w-full p-3 border border-border rounded-lg bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent"
-                    placeholder="Any additional notes, questions, transportation preferences..."></textarea>
-                </div>
-                <button type="submit" class="w-full btn-wedding text-lg py-4">Submit</button>
-              </form>
-              <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted) {}"></iframe>
+              <div class="w-16 h-px bg-primary mx-auto mb-6"></div>
+              <p class="text-base md:text-lg mb-6">RSVPs are now closed</p>
             </div>
             <div class="max-w-4xl mx-auto text-center">
               <div class="mt-8 text-center mb-12">
@@ -286,37 +225,4 @@
       </section>
     </main>
   </body>
-  <script>
-    var submitted = false;
-    document.addEventListener("DOMContentLoaded", () => {
-      const form = document.getElementById("gform");
-
-      form.addEventListener("submit", (e) => {
-        // Lock current height so we can animate from it
-        const startHeight = form.offsetHeight + "px";
-        form.style.height = startHeight;
-        form.style.overflow = "hidden";
-        form.style.transition = "opacity 0.8s ease, height 0.8s ease";
-
-        // Kick off fade + collapse on the next animation frame
-        requestAnimationFrame(() => {
-          form.style.opacity = "0";
-          form.style.height = "0";
-        });
-
-        // After transition completes: hide form, then insert message
-        form.addEventListener(
-          "transitionend",
-          () => {
-            form.style.display = "none";
-
-            const msg = document.createElement("div");
-            msg.textContent = "Thank you so much!";
-            form.parentNode.insertBefore(msg, form);
-          },
-          { once: true }
-        );
-      });
-    });
-  </script>
 </html>
