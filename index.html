@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Cam and Stacie</title>
+    <title>Cam & Stacie</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" crossorigin href="index.css" />
     <style>
       @font-face {
@@ -21,14 +20,16 @@
         font-family: "Hello Paris Serif Regular";
         font-optical-sizing: auto;
       }
+      .font-serif {
+        font-family: "EB Garamond", serif;
+        font-optical-sizing: auto;
+      }
       p,
       input,
       label,
       button {
-        font-family: "Raleway", sans-serif;
+        font-family: "EB Garamond", serif;
         font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
       }
       .text-8xl {
         font-size: 8rem;
@@ -52,176 +53,106 @@
   </head>
   <body>
     <main>
-      <!-- HERO -->
-      <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('hero.webp'); height: 100vh"></div>
-        <div class="absolute inset-0 hero-overlay"></div>
-        <div class="relative z-10 text-center text-white px-6 max-w-4xl mx-auto fade-in">
-          <div class="mb-8">
-            <h1 class="heading-font text-8xl md:text-10xl mb-4 text-white">Cam &amp; Stacie</h1>
-          </div>
-        </div>
-      </section>
       <!-- INTRO -->
-      <section id="intro" class="py-20">
+      <section class="relative flex overflow-hidden" style="height: 60vh;">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('hero.webp');"></div>
+      </section>
+      <section id="intro" class="py-12">
         <div class="container mx-auto px-8">
           <div class="max-w-4xl mx-auto text-center">
-            <h2 class="heading-font text-6xl mb-8 text-foreground">Cam Szarapka &amp; Stacie Wiebe</h2>
-            <div class="w-16 h-px bg-primary mx-auto mb-8"></div>
-            <div class="mb-8">
-              <p class="font-serif text-xl md:text-2xl mb-2">Together with our families</p>
-              <p class="font-serif text-lg md:text-xl">We invite you to celebrate our marriage</p>
-            </div>
-            <div class="mb-8">
-              <p class="text-lg md:text-xl font-bold mb-2">Wednesday, July 1, 2026</p>
-              <p class="text-base md:text-lg">Ch&acirc;teau La Carri&egrave;re • Saint-Cyprien, Dordogne, France</p>
-            </div>
+            <h2 class="heading-font text-7xl mb-8 text-foreground">Cam &amp; Stacie</h2>
+            <p class="text-lg font-serif">July 1, 2026 &mdash; Saint-Cyprien, Dordogne, France</p>
           </div>
         </div>
       </section>
-      <!-- BANNER -->
-      <section class="relative flex items-center justify-center overflow-hidden" style="height: 60vh">
-        <div
-          class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style="background-image: url('chateau_hero.jpg'); width: 100%; height: auto; max-height: 60vh"></div>
-      </section>
-      <!-- LOCATION -->
-      <section id="location" class="py-20">
-        <div class="container mx-auto px-8">
-          <div class="max-w-4xl mx-auto text-center">
-            <h2 class="heading-font text-6xl mb-8 text-foreground">Location</h2>
-            <div class="w-16 h-px bg-primary mx-auto mb-8"></div>
-            <p class="text-base md:text-lg mb-6">
-              The Dordogne region, located in southwest France between the Loire Valley and the Pyrenees, is known for its rolling green hills, medieval villages, limestone cliffs, and slow-moving rivers.
-            </p>
-            <p class="text-base md:text-lg mb-6">
-              <a href="https://www.chateaulacarriere.com/" class="text-primary font-medium hover:underline">Ch&acirc;teau La Carri&egrave;re</a>
-              is a thoughtfully restored 17th-century castle set amidst 28 hectares of private parkland in the charming village of Saint-Cyprien.
-            </p>
+      <div class="w-16 h-px bg-primary mx-auto"></div>
+      <!-- MAIN SCHEDULE -->
+      <section id="schedule" class="py-12">
+        <div class="container mx-auto px-8 max-w-lg">
+          <div class="text-center">
+            <h2 class="heading-font text-7xl mb-18 text-foreground">Schedule</h2>
+
+            <h3 class="font-serif text-4xl mb-2">WELCOME PARTY</h3>
+            <h4 class="font-serif text-xl mb-6">Monday, June 29, 2026 &mdash; 5:00 PM - 9:00 PM</h4>
+            <h4 class="font-serif text-base">Ch&acirc;teau La Carrière</h4>
+            <h4 class="font-serif text-base mb-6">La Carrière, 62 Chem. des Pèlerins, 24220 Saint-Cyprien, France</h4>
+            <p class="font-serif text-base mb-6 inline-flex">You made it to Dordogne! Join us for local wine and snacks by the château pool. We'll share travel stories and get the week started.</p>
+            <p class="font-serif text-base mb-18 inline-flex">Little ones welcome. Creative Cocktail attire. Soft start and finish times. </p>
+
+            <h3 class="font-serif text-4xl mb-2">WEDDING DAY</h3>
+            <h4 class="font-serif text-xl mb-6">Wednesday, July 1, 2026</h4>
+            <h4 class="font-serif text-base">Ch&acirc;teau La Carrière</h4>
+            <h4 class="font-serif text-base mb-6">La Carrière, 62 Chem. des Pèlerins, 24220 Saint-Cyprien, France</h4>
+            <p class="font-serif text-base mb-6 inline-flex">It's the big day! We're still working on the details of the ceremony and reception. We'll communicate the start time closer to the event.</p>
+            <p class="font-serif text-base inline-flex">French Garden Formal attire.</p>
+
           </div>
         </div>
       </section>
-      <!-- BANNER -->
-      <section class="relative flex items-center justify-center overflow-hidden" style="height: 60vh">
-        <div
-          class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style="background-image: url('beynac_hero.jpeg'); width: 100%; height: auto; max-height: 60vh"></div>
-      </section>
-      <!-- ITINERARY -->
-      <section id="accommodation" class="py-20">
-        <div class="container mx-auto px-8 max-w-4xl">
-          <div class="text-center mb-12">
-            <h2 class="heading-font text-6xl mb-8 text-foreground">Itinerary</h2>
-            <div class="w-16 h-px bg-primary mx-auto mb-6"></div>
-            <p class="text-base md:text-lg mb-6">
-              We will be staying at Ch&acirc;teau La Carri&egrave;re from <span class="font-bold">June 28th to July 3rd</span>, and invite you to join us for our wedding week in Dordogne:
-            </p>
-            <p class="text-base md:text-lg mb-2">June 28th &mdash; Arrival & Welcome Party</p>
-            <p class="text-base md:text-lg mb-2">June 29th &mdash; Exploring Dordogne</p>
-            <p class="text-base md:text-lg mb-2">June 30th &mdash; Rehearsal Dinner</p>
-            <p class="text-base md:text-lg mb-2 font-bold">July 1st &mdash; Wedding Day!</p>
-            <p class="text-base md:text-lg mb-2">July 2nd &mdash; Brunch & Relaxation</p>
-            <p class="text-base md:text-lg mb-6">July 3rd &mdash; Departure</p>
-            <div class="w-16 h-px bg-primary mx-auto mb-6"></div>
-            <div class="mb-6">
-              <p class="text-base md:text-lg">More details to follow</p>
-            </div>
+      <div class="w-16 h-px bg-primary mx-auto"></div>
+      <!-- OPTIONAL EVENTS -->
+      <section id="schedule" class="py-12">
+        <div class="container mx-auto px-8 max-w-lg">
+          <div class="text-center">
+            <h2 class="heading-font text-7xl mb-18 text-foreground">Additional Events</h2>
+
+            <h3 class="font-serif text-4xl mb-2">WANDERING SARLAT</h3>
+            <h4 class="font-serif text-xl mb-6">Sunday, June 28, 2026 &mdash; Until 4:00 PM</h4>
+            <h4 class="font-serif text-base mb-6">Sarlat-la-Canéda</h4>
+            <p class="font-serif text-base mb-6 inline-flex">We personally arrive in Bordeaux on Friday and will be spending Saturday preparing for the main events &mdash; mostly buying wine, let's be honest! On Sunday we check in to the château at 5pm but before that we'll be taking in Sarlat and getting a feel for the town. If you're in Dordogne at this point, feel free to join us to explore the medieval streets and local markets as we spend the day wandering.</p>
+            <p class="font-serif text-base mb-6 inline-flex">Please do give us a heads-up if you will be stopping by. We may consider a patio reservation somewhere for a late lunch.</p>
+            <p class="font-serif text-base mb-18 inline-flex"><i>(This is a completely optional event, please don't feel obliged to join!)</i></p>
+
+            <h3 class="font-serif text-4xl mb-2">REHEARSAL</h3>
+            <h4 class="font-serif text-xl mb-6">Tuesday, June 30, 2026 &mdash; 5:00 PM</h4>
+            <h4 class="font-serif text-base mb-6">Château La Carrière & Sarlat</h4>
+            <p class="font-serif text-base mb-6 inline-flex">Please meet us at the château for a rehearsal, afterwards we will head into town for dinner.</p>
+            <p class="font-serif text-base inline-flex"><i>(For the Wedding Party and parents only. Sorry partners!)</i></p>
+
           </div>
         </div>
       </section>
-      <!-- BANNER -->
-      <section class="relative flex items-center justify-center overflow-hidden" style="height: 60vh">
-        <div
-          class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style="background-image: url('france_map.png'); width: 100%; height: auto; max-height: 60vh"></div>
-      </section>
-      <!-- TRAVEL -->
-      <section id="travel" class="py-20">
-        <div class="container mx-auto px-8 max-w-4xl">
-          <div class="text-center mb-12">
-            <h2 class="heading-font text-6xl mb-8 text-foreground">Travel</h2>
-            <div class="w-16 h-px bg-primary mx-auto mb-6"></div>
-            <p class="text-base md:text-lg mb-6">
-              The closest international airport to the château is Bordeaux–Mérignac Airport (BOD). From there, it's about a 2hr drive to the Ch&acirc;teau. That being said, there are numerous ways to reach the Dordogne region from various international airports in France and Europe, including train and car rentals.
-            </p>
-            <p class="text-base md:text-lg mb-6">
-              Let us know if you'd like any help or suggestions with travel planning!
-            </p>
-            <div class="bg-wedding-cream/50 p-6 rounded-lg mb-6">
-              <h4 class="font-serif text-lg mb-4 text-foreground">How We're Getting There</h4>
-              <p class="text-muted-foreground text-sm leading-relaxed mb-4">
-                For our own travel, we’ll be flying Vancouver (YVR) - London (LGW), then booking a separate London (LGW) - Bordeaux (BOD) flight with a European airline. We’ve found this approach offers better pricing and more flight availability than booking “Vancouver to Bordeaux” directly. From Bordeaux we’ll be renting a car for the drive into Dordogne.
-              </p>
-            </div>
-            <div class="bg-wedding-cream/50 p-6 rounded-lg">
-              <h4 class="font-serif text-lg mb-4 text-foreground">Ground Transportation</h4>
-              <p class="text-muted-foreground text-sm leading-relaxed mb-4">
-                From Bordeaux we’ll be renting a car for the drive into Dordogne, but can arrange a group shuttle if there is enough interest. Let us know in your RSVP if you’d prefer a shuttle.
-              </p>
-            </div>
+      <div class="w-16 h-px bg-primary mx-auto"></div>
+      <!-- Q+A -->
+      <section id="schedule" class="py-12">
+        <div class="container mx-auto px-8 max-w-lg">
+          <div class="text-center">
+            <h2 class="heading-font text-7xl mb-18 text-foreground">Q + A</h2>
+
+            <h4 class="font-serif text-xl mb-2">WHAT IS THE DRESS CODE?</h4>
+            <p class="font-serif text-base mb-8">The Welcome Party is Creative Cocktail attire (bright colours), <a class="text-primary font-medium hover:underline" target="_blank" href="https://pin.it/r2N09QyFa">inspo here</a>. The Wedding is French Garden Formal (floor-length dresses), <a class="text-primary font-medium hover:underline" target="_blank" href="https://pin.it/4IwSJNKcN">inspo here</a>. Gentleman, while the wedding is not "Black Tie" or "Black Tie Optional", if you have a tux you are most welcome to wear it! On the Wedding Day, the bridesmaids will be wearing french blue dresses. Dordogne in July gets up to about 27&deg;C &mdash; dark-coloured linens are okay.</p>
+
+            <h4 class="font-serif text-xl mb-2">CAN I BRING MY KIDS?</h4>
+            <p class="font-serif text-base mb-8 inline-flex">While we adore your kids, we are asking to keep the Wedding Day adults-only so everyone can relax and enjoy the celebration. We hope you understand and can arrange childcare for the day if you do plan to bring your little one.</p>
+
+            <h4 class="font-serif text-xl mb-2">DID THE SCHEDULE CHANGE?</h4>
+            <p class="font-serif text-base mb-8 inline-flex">Yes! You're not crazy. We didn't initially realize we could only host 2 events at the château and that check-in on the 28th was at 5pm (making a welcome party that day rather rushed). Along with the short-notice wedding we apologize for the changes to the schedule, we hope this hasn't disrupted your plans.</p>
+
+            <h4 class="font-serif text-xl mb-2">WHAT IS THE PARKING SITUATION?</h4>
+            <p class="font-serif text-base mb-8 inline-flex">There is very limited parking at the château. Please plan to arrive by taxi for the events.</p>
+
+            <h4 class="font-serif text-xl mb-2">IS THERE A GIFT REGISTRY?</h4>
+            <p class="font-serif text-base mb-8 inline-flex">We've asked you to come to a remote region in France and YOU SAID YES! We couldn't imagine a greater gift. If you are feeling keen &mdash; and that's beyond generous of you &mdash; we would greatly appreciate a honeymoon contribution.</p>
+
+            <h4 class="font-serif text-xl mb-2">ANY OTHER QUESTIONS?</h4>
+            <p class="font-serif text-base inline-flex">Shoot us a text or call!</p>
+
           </div>
         </div>
       </section>
-      <!-- BANNER -->
-      <section class="relative flex items-center justify-center overflow-hidden" style="height: 60vh">
-        <div
-          class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style="background-image: url('dordogne_village.jpg'); width: 100%; height: auto; max-height: 60vh"></div>
-      </section>
-      <!-- ACCOMMODATION -->
-      <section id="accommodation" class="py-20">
-        <div class="container mx-auto px-8 max-w-4xl">
-          <div class="text-center mb-12">
-            <h2 class="heading-font text-6xl mb-8 text-foreground">Accommodation</h2>
-            <div class="w-16 h-px bg-primary mx-auto mb-6"></div>
-            <p class="text-base md:text-lg mb-6">
-              Château La Carrière has limited (8) guest rooms which we are first holding for our wedding party. However, the charming village of Saint-Cyprien (Dordogne) and the surrounding valley offer plentiful Airbnbs, boutique inns, and countryside gîtes within a short drive of the château.
-            </p>
-            <div class="bg-wedding-cream/50 p-6 rounded-lg">
-              <h4 class="font-serif text-lg mb-4 text-foreground">Searching For Accommodation</h4>
-              <p class="text-muted-foreground text-sm leading-relaxed mb-4">
-                There are several towns and villages in France named "Saint-Cyprien." To avoid mistakes, here is the exact location:
-              </p>
-              <p class="text-muted-foreground text-sm leading-relaxed mb-4">
-                <a href="https://maps.app.goo.gl/zNsiE9Jf7Z8D1D6q9" class="text-primary font-medium hover:underline">Open in Maps</a>
-              </p>
-            </div>
+      <div class="w-16 h-px bg-primary mx-auto"></div>
+      <!-- FOOTER -->
+      <section id="footer" class="py-12">
+        <div class="container mx-auto px-8 max-w-lg">
+          <div class="text-center">
+            <h2 class="heading-font text-7xl mb-12 text-foreground">Cam & Stacie</h2>
+            <p class="font-serif text-base">Specific Link For</p>
+            <p class="font-serif text-base"><a class="text-primary font-medium hover:underline" href="chateau">Château Guests Only</a></p>
           </div>
         </div>
       </section>
-      <!-- BANNER -->
-      <section class="relative flex items-center justify-center overflow-hidden" style="height: 60vh">
-        <div
-          class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style="background-image: url('chateau_courtyard.jpg'); width: 100%; height: auto; max-height: 60vh"></div>
-      </section>
-      <!-- RSVP -->
-      <section id="rsvp" class="py-20">
-        <div class="container mx-auto px-6">
-          <div class="max-w-2xl mx-auto">
-            <div class="text-center mb-12">
-              <h2 class="heading-font text-6xl mb-8 text-foreground">Rsvp</h2>
-              <div class="w-16 h-px bg-primary mx-auto mb-6"></div>
-              <p class="text-base md:text-lg mb-6">
-                We understand that not all of our friends and family will be able to join us, especially considering the short notice and travel. We will be hosting a wedding reception back in Vancouver in late August, for which a separate invite will be sent.
-              </p>
-              <p class="text-base md:text-lg mb-6"><span class="font-bold">To the parents:</span> while we adore your kids, we are keeping the Wedding Day + Evening adults-only so everyone can relax and enjoy the celebration.</p>
-              <p class="text-base md:text-lg mb-6">We cannot wait to celebrate with you!</p>
-              <div class="w-16 h-px bg-primary mx-auto mb-6"></div>
-              <p class="text-base md:text-lg mb-6">RSVPs are now closed</p>
-            </div>
-            <div class="max-w-4xl mx-auto text-center">
-              <div class="mt-8 text-center mb-12">
-                <p class="text-sm text-muted-foreground mb-4">Any questions? Just call, text or email us.</p>
-              </div>
-              <div class="w-16 h-px bg-primary mx-auto mb-8"></div>
-              <div class="mb-4">
-                <p class="text-base md:text-lg">All our love,</p>
-              </div>
-              <h2 class="heading-font text-6xl mb-8 text-foreground">Cam & Stacie</h2>
-            </div>
-          </div>
-        </div>
+      <section class="relative flex overflow-hidden" style="height: 60vh;">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('chateau_courtyard.jpg');"></div>
       </section>
     </main>
   </body>
